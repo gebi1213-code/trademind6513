@@ -3,11 +3,12 @@ import { NextResponse } from "next/server";
 export async function GET() {
   return NextResponse.json([
     {
-      ticket: 123,
+      ticket: 12345,
       symbol: "ETHUSD",
-      profit: 50,
+      profit: 100,
+      volume: 1,
       price: 2500,
-      time: Date.now(),
-    },
+      time: Date.now()
+    }
   ]);
 }
